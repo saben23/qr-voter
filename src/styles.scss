@@ -12,14 +12,14 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$qr-voter-primary: mat-palette($mat-indigo);
-$qr-voter-accent: mat-palette($mat-pink, A200, A100, A400);
+$qr-voter-primary: mat-palette($mat-blue-grey);
+$qr-voter-accent: mat-palette($mat-amber, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$qr-voter-warn: mat-palette($mat-red);
+$qr-voter-warn: mat-palette($mat-deep-orange);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$qr-voter-theme: mat-light-theme($qr-voter-primary, $qr-voter-accent, $qr-voter-warn);
+$qr-voter-theme: mat-dark-theme($qr-voter-primary, $qr-voter-accent, $qr-voter-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
