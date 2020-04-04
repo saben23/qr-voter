@@ -33,7 +33,7 @@ export class AppComponent {
       },
       {
         columns : [
-            { qr: 'http://192.168.0.133:4200', fit : 100 },
+            { qr: 'http://localhost:4200', fit : 100 },
             {
             text: `(weburl)`,
             alignment: 'right',
