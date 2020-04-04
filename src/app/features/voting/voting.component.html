@@ -1,0 +1,17 @@
+
+<div class="content" role="main">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+    <span>My app is running!</span>
+  </div>
+  <div>
+    <img src="../../assets/moraine_lake_canada_4k-1920x1080.jpg" width="1000px" height="500px">
+  </div>
+  <div>
+    <bar-rating [(rate)]="rate" [max]="5" (rateChange)="onRateChange($event)" [theme]="'stars'"></bar-rating>
+  </div>
+  <div>
+    <button (click)="openPdf()">Open PDF</button>
+  </div>
+</div>
