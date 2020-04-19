@@ -1,17 +1,17 @@
 
-<div class="content" role="main">
-
+<div class="content" fxLayout="column" fxLayoutAlign="top center" role="main">
   <!-- Highlight Card -->
-  <div class="card highlight-card card-small">
+  <mat-card class="card" fxLayoutAlign="center center">
     <span>My app is running!</span>
-  </div>
+  </mat-card>
   <div>
     <img src="../../assets/moraine_lake_canada_4k-1920x1080.jpg" width="1000px" height="500px">
   </div>
-  <div>
-    <bar-rating [(rate)]="rate" [max]="5" (rateChange)="onRateChange($event)" [theme]="'stars'"></bar-rating>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <bar-rating class="rating-bar" [(rate)]="rate" [max]="5" (rateChange)="onRateChange($event)" [theme]="'stars'"></bar-rating>
+    <button mat-raised-button class="vote-button" (click)="onVote()">Vote</button>
   </div>
   <div>
-    <button (click)="openPdf()">Open PDF</button>
+    
   </div>
 </div>
